@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SprintSpyApplication.SprintItemsDataSetTableAdapters;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +20,11 @@ namespace SprintSpyApplication
         }
 
         private void ShowNotificationButton_Click(object sender, EventArgs e)
+        {
+            ShowNotification();
+        }
+
+        private static void ShowNotification()
         {
             PopupNotifier popup = new PopupNotifier();
             popup.Image = Properties.Resources.info;
@@ -50,6 +56,34 @@ namespace SprintSpyApplication
         private void closeApplicationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'sprintItemsDataSet.Story' table. You can move, or remove it, as needed.
+            this.storyTableAdapter.Fill(this.sprintItemsDataSet.Story);
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void TestAddRowButton_Click(object sender, EventArgs e)
+        {
+            int testIdentifier = 2;
+
+            var reader = sprintItemsDataSet.Story.CreateDataReader();
+
+            while (reader.Read())
+            {
+                if (testIdentifier == reader.GetFieldValue<int>(1))
+                {
+                    ShowNotification();
+                }
+
+            }
         }
     }
 }

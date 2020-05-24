@@ -9,4 +9,10 @@ C:\src\SprintSpy\SprintSpyApplication\obj\Debug\SprintSpyApplication.pdb
 C:\src\SprintSpy\SprintSpyApplication\obj\Debug\SprintSpyApplication.Form1.resources
 C:\src\SprintSpy\SprintSpyApplication\bin\Debug\Tulpep.NotificationWindow.dll
 C:\src\SprintSpy\SprintSpyApplication\obj\Debug\SprintSpyApplication.csproj.CopyComplete
+C:\src\SprintSpy\SprintSpyApplication\bin\Debug\SprintItems.mdf
+C:\src\SprintSpy\SprintSpyApplication\bin\Debug\SprintItems_log.ldf
+C:\src\SprintSpy\SprintSpyApplication\bin\Debug\EntityFramework.dll
+C:\src\SprintSpy\SprintSpyApplication\bin\Debug\EntityFramework.SqlServer.dll
+C:\src\SprintSpy\SprintSpyApplication\bin\Debug\EntityFramework.xml
+C:\src\SprintSpy\SprintSpyApplication\bin\Debug\EntityFramework.SqlServer.xml
 C:\src\SprintSpy\SprintSpyApplication\obj\Debug\SprintSpyApplication.csprojAssemblyReference.cache
